@@ -13,47 +13,35 @@ $(document).ready(function () {
   function changeColor() {
     var currentTime = moment().hour();
 
-    $(".row").each(function () {
-      var timeSlot = parseInt($(this).attr("id").split("hour")[1]);
+    $(".row").each(function (i) {
+      var timeSlot = parseInt($(".row")[i].id)
+      var timeSlotId = $(".row")[i].id
 
       if (timeSlot < currentTime) {
-        $(this)
-        .removeClass("future");
-        $(this)
-        .removeClass("present");
-        $(this)
-        .addClass("past");
+
+        $("#" + timeSlotId).addClass("past");
+     
+      } else if (timeSlot > currentTime) {
+
+        $("#" + timeSlotId).addClass("future")
+
       } else if (timeSlot === currentTime) {
-        $(this)
-        .removeClass("past");
-        $(this)
-        .removeClass("future");
-        $(this)
-        .addClass("present");
-      } else {
-        $(this)
-        .removeClass("present");
-        $(this)
-        .removeClass("past");
-        $(this)
-        .addClass("future");
-      }
+
+        $("#" + timeSlotId).addClass("present")
+      };
     });
   }
 
-
-
-
-  $("#8a .description").val(localStorage.getItem("8a"));
-  $("#9a .description").val(localStorage.getItem("9a"));
-  $("#10a .description").val(localStorage.getItem("10a"));
-  $("#11a .description").val(localStorage.getItem("11a"));
-  $("#12p .description").val(localStorage.getItem("12p"));
-  $("#1p .description").val(localStorage.getItem("1p"));
-  $("#2p .description").val(localStorage.getItem("2p"));
-  $("#3p .description").val(localStorage.getItem("3p"));
-  $("#4p .description").val(localStorage.getItem("4p"));
-  $("#5p .description").val(localStorage.getItem("5p"));
+  $("#8 .description").val(localStorage.getItem("8"));
+  $("#9 .description").val(localStorage.getItem("9"));
+  $("#10 .description").val(localStorage.getItem("10"));
+  $("#11 .description").val(localStorage.getItem("11"));
+  $("#12 .description").val(localStorage.getItem("12"));
+  $("#13 .description").val(localStorage.getItem("13"));
+  $("#14 .description").val(localStorage.getItem("14"));
+  $("#15 .description").val(localStorage.getItem("15"));
+  $("#16 .description").val(localStorage.getItem("16"));
+  $("#17 .description").val(localStorage.getItem("17"));
 
 
 
