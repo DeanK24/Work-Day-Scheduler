@@ -7,7 +7,7 @@ This is my Work day scheduler. It has normal business hours listed and you can a
 ## Installation
 
 Click on the following link to visit.
-https://deank24.github.io/Code-quiz/
+https://deank24.github.io/Work-Day-Scheduler/
 
 ## Usage
 
