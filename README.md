@@ -13,7 +13,7 @@ https://deank24.github.io/Code-quiz/
 
 Provide instructions and examples for use. Include screenshots as needed.
   
-![Screenshot](/assets/images/_C__Users_deank_challenges_Work-Day-Scheduler_index.html.png)
+![Screenshot](/assets/images/_C__Users_deank_challenges_Work-Day-Scheduler_index.html%20(1).png)
 
 
 ## Credits
